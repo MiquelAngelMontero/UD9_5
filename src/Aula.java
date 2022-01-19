@@ -58,12 +58,22 @@ public class Aula {
 		
 		int porcentaje = (cont / maxAlumn) * 100;
 		
-		if (porcentaje >= 50) {
+		if (porcentaje < 50) {
 			return false;
 		}else {
 			return true;
 		}
 		
+	}
+	
+	//Contaqdor de alumnos y alumnas
+	
+	public void mostrarNumeroAlumnado() {
+		for (int i = 0; i < alumnos.length; i++) {
+			if (alumnos[i].getNota() >= 5) {
+				System.out.println("Alumno " + alumnos[i].getNombre() + " tiene de nota " + alumnos[i].getNota());
+			}
+		}
 	}
 	
 }

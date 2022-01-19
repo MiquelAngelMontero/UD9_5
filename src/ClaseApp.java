@@ -30,6 +30,7 @@ public class ClaseApp {
 		
 		System.out.println(au1.aulaDisp());
 		
+		au1.mostrarNumeroAlumnado();
 	}
 
 }
