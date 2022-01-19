@@ -9,7 +9,7 @@ public class Alumno extends Persona {
 		super(nombre, edad, sexo);
 		// TODO Auto-generated constructor stub
 		this.nota=nota;	
-		this.falta=falta();
+		super.falta=falta();
 	}
 
 	//Metodos

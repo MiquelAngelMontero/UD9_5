@@ -9,16 +9,24 @@ public class ClaseApp {
 		Profesor p2 = new Profesor("Jorge", 42, 'H', "fisica");
 		Profesor p3 = new Profesor("Maria", 27, 'M', "filosofia");
 		
+<<<<<<< HEAD
 		System.out.println("Faltan profesores?");
 		System.out.println(p1.falta+ " " +p2.falta+ " " +p3.falta);
+=======
+		
+>>>>>>> refs/remotes/origin/main
 		
 		Alumno a1 = new Alumno("Albert", 27, 'H', 7);
 		Alumno a2 = new Alumno("Jordi", 20, 'H', 6);
 		Alumno a3 = new Alumno("Alicia", 22, 'M', 5);
 		Alumno a4 = new Alumno("Inma", 18, 'M', 8);
 		
+<<<<<<< HEAD
 		System.out.println("\nFaltan alumnos?");
 		System.out.println(a1.falta+ " " +a2.falta+ " " +a3.falta+ " " +a4.falta);
+=======
+		
+>>>>>>> refs/remotes/origin/main
 		
 		//Creamos el aula
 		Alumno[] arrayAlumn = new Alumno[4];
@@ -30,7 +38,13 @@ public class ClaseApp {
 		
 		Aula au1 = new Aula(103, 4, "filosofia", p3, arrayAlumn);
 		
+<<<<<<< HEAD
 		System.out.println("\nHay clase?");
+=======
+		au1.MostrarFaltasAlumno();
+		
+		System.out.println("Falta profesor " + au1.getProfesor().falta);
+>>>>>>> refs/remotes/origin/main
 		System.out.println(au1.aulaDisp());
 		
 		System.out.println("\n");

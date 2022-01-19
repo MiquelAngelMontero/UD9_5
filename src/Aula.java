@@ -36,8 +36,6 @@ public class Aula {
 		
 		if(profe.falta) {
 			return false;
-		}else if(!profe.getMateria().equals(materia)) {
-			return false;
 		}else {
 			return true;
 		}
@@ -56,7 +54,18 @@ public class Aula {
 			
 		}
 		
+<<<<<<< HEAD
 		if (cont > maxAlumn/2) {
+=======
+		//int porcentaje = (cont / maxAlumn) * 100;
+		
+		//double porcentaje = (cont * 100) / maxAlumn;
+		//System.out.println("Porcentaje de faltas " + porcentaje);
+		//System.out.println("Faltan " + cont + " de " + maxAlumn + " alumnos");
+		System.out.println((double) (alumnos.length / 2));
+		System.out.println(cont + " es mas grande que " + (double) (alumnos.length / 2) + " " + (cont > (double) (alumnos.length / 2)));
+		if (cont > (double) (alumnos.length / 2)) {
+>>>>>>> refs/remotes/origin/main
 			return false;
 		}else if(cont <= maxAlumn/2){
 			return true;
@@ -67,6 +76,12 @@ public class Aula {
 		
 	}
 	
+	public void MostrarFaltasAlumno() {
+		for (int i = 0; i < alumnos.length; i++) {
+			System.out.println("Alumno " + i + alumnos[i].falta());
+		}
+	}
+	
 	//Contaqdor de alumnos y alumnas
 	
 	public void mostrarNumeroAlumnado() {
@@ -75,6 +90,10 @@ public class Aula {
 				System.out.println("Alumno " + alumnos[i].getNombre() + " tiene de nota " + alumnos[i].getNota());
 			}
 		}
+	}
+	
+	public Profesor getProfesor() {
+		return this.profe;
 	}
 	
 }
