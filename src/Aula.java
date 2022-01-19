@@ -10,13 +10,13 @@ public class Aula {
 	private boolean hayClase;
 	
 	//Constructor
-	public Aula(int identificador, int maxAlumn, String materia, Profesor profe, Alumno[] alumnos, boolean hayClase) {
+	public Aula(int identificador, int maxAlumn, String materia, Profesor profe, Alumno[] alumnos) {
 		this.identificador = identificador;
 		this.maxAlumn = maxAlumn;
 		this.materia = materia;
 		this.profe = profe;
 		this.alumnos = alumnos;
-		this.hayClase = hayClase;
+		this.hayClase = aulaDisp();
 	}
 	
 	//Metodos
