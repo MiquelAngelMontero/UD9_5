@@ -5,6 +5,15 @@ public abstract class Persona {
 	protected String nombre;
 	protected int edad;
 	protected char sexo;
+	protected boolean falta;
+	
+	//Constructor
+	public Persona(String nombre, int edad, char sexo) {
+		this.nombre = nombre;
+		this.edad = edad;
+		this.sexo = sexo;
+		this.falta = falta();
+	}
 	
 	//Metodos
 	public boolean comprovarSexo() {
@@ -17,6 +26,7 @@ public abstract class Persona {
 		
 	}
 	
+
 	public abstract boolean falta();
 	
 }
