@@ -9,6 +9,7 @@ public class Profesor extends Persona {
 		super(nombre, edad, sexo);
 		// TODO Auto-generated constructor stub
 		this.materia=comprovarMateria(materia);
+		this.falta=falta();
 	}
 	
 	//Metodos
@@ -42,5 +43,10 @@ public class Profesor extends Persona {
 			return false;
 		}
 	}
+
+	public String getMateria() {
+		return materia;
+	}
+
 	
 }
