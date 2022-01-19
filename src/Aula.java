@@ -53,19 +53,9 @@ public class Aula {
 			}
 			
 		}
-		
-<<<<<<< HEAD
-		if (cont > maxAlumn/2) {
-=======
-		//int porcentaje = (cont / maxAlumn) * 100;
-		
-		//double porcentaje = (cont * 100) / maxAlumn;
-		//System.out.println("Porcentaje de faltas " + porcentaje);
-		//System.out.println("Faltan " + cont + " de " + maxAlumn + " alumnos");
-		System.out.println((double) (alumnos.length / 2));
-		System.out.println(cont + " es mas grande que " + (double) (alumnos.length / 2) + " " + (cont > (double) (alumnos.length / 2)));
+			
 		if (cont > (double) (alumnos.length / 2)) {
->>>>>>> refs/remotes/origin/main
+
 			return false;
 		}else if(cont <= maxAlumn/2){
 			return true;
