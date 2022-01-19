@@ -16,8 +16,8 @@ public class Alumno extends Persona {
 	@Override
 	public boolean falta() {
 
-		int random = (int) Math.random() * (2-1)+1;
-		if(random == 1) {
+		int random = (int) (Math.random() * 10);
+		if(random < 5) {
 			return true;
 		}else {
 			return false;

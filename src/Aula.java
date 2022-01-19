@@ -34,7 +34,7 @@ public class Aula {
 	//Metodo para comprovar si el profesor esta disponible
 	public boolean profDisp() {
 		
-		if(profe.falta) {
+		if(profe.falta()) {
 			return false;
 		}else if(!profe.getMateria().equals(materia)) {
 			return false;
@@ -50,7 +50,7 @@ public class Aula {
 		int cont = 0;
 		for(int i = 0; i<maxAlumn; i++) {
 			
-			if (alumnos[i].falta) {
+			if (alumnos[i].falta()) {
 				cont++;
 			}
 			

@@ -9,7 +9,7 @@ public class Profesor extends Persona {
 		super(nombre, edad, sexo);
 		// TODO Auto-generated constructor stub
 		this.materia=comprovarMateria(materia);
-		this.falta=falta();
+		super.falta=falta();
 	}
 	
 	//Metodos
@@ -36,8 +36,8 @@ public class Profesor extends Persona {
 	//Metodo de falta
 	@Override
 	public boolean falta() {
-		int random = (int) Math.random() * (10-1)+1;
-		if((random == 1) || (random == 2)) {
+		int random = (int) (Math.random() * 10);
+		if((random <= 2)) {
 			return true;
 		}else {
 			return false;
