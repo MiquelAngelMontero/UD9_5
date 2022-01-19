@@ -34,7 +34,7 @@ public class Aula {
 	//Metodo para comprovar si el profesor esta disponible
 	public boolean profDisp() {
 		
-		if(profe.falta()) {
+		if(profe.falta) {
 			return false;
 		}else if(!profe.getMateria().equals(materia)) {
 			return false;
@@ -48,20 +48,21 @@ public class Aula {
 	public boolean alumnDisp() {
 		
 		int cont = 0;
-		for(int i = 0; i<maxAlumn; i++) {
+		for(int i = 0; i<alumnos.length; i++) {
 			
-			if (alumnos[i].falta()) {
+			if (alumnos[i].falta) {
 				cont++;
 			}
 			
 		}
 		
-		int porcentaje = (cont / maxAlumn) * 100;
-		
-		if (porcentaje < 50) {
+		if (cont > maxAlumn/2) {
 			return false;
-		}else {
+		}else if(cont <= maxAlumn/2){
 			return true;
+		}else {
+			System.out.println("no entro a ninguno");
+			return false;
 		}
 		
 	}

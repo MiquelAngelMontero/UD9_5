@@ -9,6 +9,7 @@ public class ClaseApp {
 		Profesor p2 = new Profesor("Jorge", 42, 'H', "fisica");
 		Profesor p3 = new Profesor("Maria", 27, 'M', "filosofia");
 		
+		System.out.println("Faltan profesores?");
 		System.out.println(p1.falta+ " " +p2.falta+ " " +p3.falta);
 		
 		Alumno a1 = new Alumno("Albert", 27, 'H', 7);
@@ -16,6 +17,7 @@ public class ClaseApp {
 		Alumno a3 = new Alumno("Alicia", 22, 'M', 5);
 		Alumno a4 = new Alumno("Inma", 18, 'M', 8);
 		
+		System.out.println("\nFaltan alumnos?");
 		System.out.println(a1.falta+ " " +a2.falta+ " " +a3.falta+ " " +a4.falta);
 		
 		//Creamos el aula
@@ -28,9 +30,14 @@ public class ClaseApp {
 		
 		Aula au1 = new Aula(103, 4, "filosofia", p3, arrayAlumn);
 		
+		System.out.println("\nHay clase?");
 		System.out.println(au1.aulaDisp());
 		
-		au1.mostrarNumeroAlumnado();
+		System.out.println("\n");
+		
+		if(au1.aulaDisp()) {
+			au1.mostrarNumeroAlumnado();
+		}
 	}
 
 }
